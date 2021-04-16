@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```AsenaBlack Felix İçin Çalışıyor!```\n\n*Instagram:* ```Spiocagan```\n*Grade:* ```Developer```\n*Ortak:* ```SayeX```\n*Instagram'ı:* ```MTalha00```\n*" }
+            { mimetype: Mimetype.gif, caption: "```AsenaBlack Felix İçin Çalışıyor!```\n\n*Instagram:* ```Spiocagan```\n*Grade:* ```Developer```\n*Ortak:* ```Bal Klavuzu İlahisi```\n*Instagram'ı:* ```MTalha00```\n\n*Favori Müziğim:*```SayeX```" }
         )
     }
  }));
