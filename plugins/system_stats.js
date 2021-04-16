@@ -20,15 +20,17 @@ const Lang = Language.getString('system_stats');
 if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+  
+    if (Config.ALIVEMSG == 'default') {
 
-        if (Config.ALIVEMSG == 'default') {
-            await message.client.sendMessage(
+        await message.client.sendMessage(
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```AsenaBlack Felix İçin Çalışıyor!```\n\n```caganozdemir.net```}
-        }
-    }));
+            { mimetype: Mimetype.gif, caption: "```AsenaBlack Felix İçin Çalışıyor!```\n\n*Instagram:* ```Spiocagan```\n*Grade:* ```Developer```\n*AI Packages:* ```Xteam / Eva / DeepAI / WhatsAsena / RTDA```" }
+        )
+    }
+ }));
 
     Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
