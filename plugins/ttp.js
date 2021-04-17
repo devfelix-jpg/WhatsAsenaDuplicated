@@ -15,8 +15,7 @@ const Lang = Language.getString('ttp');
 
 const acik = "Tüm ttp Komutlarını gösterir"
 
-const KOMUT = {    
-    '●▬▬▬ *AsenaBlack Felixin Hizmetinde* ▬▬▬●\n\n',
+const KOMUT = { 
     ttpkomut: '💻Usage: *.ttp selam* \n',
     ttpdesc: 'ℹ️Desc: _yazıyı sade resme çevirir_. \n\n',
     attpkomut: '💻Usage: *.attp selam*  \n',
@@ -36,7 +35,7 @@ const KOMUT = {
     metalkomut: '💻Usage: *.metalttp selam* \n',
     metaldesc: 'ℹ️Desc: _yazıyı metal görünümlü resme çevirir_. \n\n',
     glowkomut: '💻Usage: *.glowttp selam* \n',
-    glowdesc: 'ℹ️Desc: _yazıyı parlayan neon resme çevirir_. \n\n',
+    glowdesc: 'ℹ️Desc: _yazıyı parıltılı neon resme çevirir_. \n\n',
     paperkomut: '💻Usage: *paperttp selam* \n',
     paperdesc: 'ℹ️Desc: _yazıyı yanık kağıt üzerine yazılmış resme çevirir_. \n\n',
     candlekomut: '💻Usage: *.candlettp selam* \n',
@@ -69,6 +68,10 @@ const KOMUT = {
     starsdesc: 'ℹ️Desc: _yazıyı yıldızlar arasına yazılmış resme çevirir_. \n\n',
     mmetalkomut: '💻Usage: *.mmetalttp selam* \n',
     mmetaldesc: 'ℹ️Desc: _yazıyı modern metal resme çevirir_. \n\n',
+    metalickomut: '💻Usage: *.metalicttp selam* \n',
+    metalicdesc: 'ℹ️Desc: _yazıyı metalik parıltılı resme çevirir_. \n\n',
+    colorfulkomut: '💻Usage: *.colorful selam* \n',
+    colorfuldesc: 'ℹ️Desc: _yazıyı video haline getirir_. \n\n',
 };
 
 
@@ -79,54 +82,58 @@ Asena.addCommand({ pattern: 'allttp', desc: acik, deleteCommand: true}, (async (
         KOMUT.ttpdesc +
         KOMUT.attpkomut +
         KOMUT.attpdesc +
-    KOMUT.animekomut +
-    KOMUT.animedesc +
-    KOMUT.firekomut +
-    KOMUT.firedesc +
-    KOMUT.neonkomut +
-    KOMUT.firedesc +
-    KOMUT.avengerskomut +
-    KOMUT.avengersdesc +
-    KOMUT.leafkomut +
-    KOMUT.leafdesc +
-    KOMUT.harrykomut +
-    KOMUT.harrydesc +
-    KOMUT.metalkomut +
-    KOMUT.metaldesc +
-    KOMUT.glowkomut +
-    KOMUT.glowdesc +
-    KOMUT.paperkomut +
-    KOMUT.paperdesc +
-    KOMUT.candlekomut +
-    KOMUT.candledesc +
-    KOMUT.lovekomut +
-    KOMUT.lovedesc +
-    KOMUT.flowerkomut +
-    KOMUT.flowerdesc +
-    KOMUT.glasskomut +
-    KOMUT.glassdesc +
-    KOMUT.coffeekomut +
-    KOMUT.coffeedesc +
-    KOMUT.coffeecupkomut +
-    KOMUT.coffeecupdesc +
-    KOMUT.candykomut +
-    KOMUT.candydesc +
-    KOMUT.sandkomut +
+	KOMUT.animekomut +
+	KOMUT.animedesc +
+	KOMUT.firekomut +
+	KOMUT.firedesc +
+	KOMUT.neonkomut +
+	KOMUT.firedesc +
+	KOMUT.avengerskomut +
+	KOMUT.avengersdesc +
+	KOMUT.leafkomut +
+	KOMUT.leafdesc +
+	KOMUT.harrykomut +
+	KOMUT.harrydesc +
+	KOMUT.metalkomut +
+	KOMUT.metaldesc +
+	KOMUT.glowkomut +
+	KOMUT.glowdesc +
+	KOMUT.paperkomut +
+	KOMUT.paperdesc +
+	KOMUT.candlekomut +
+	KOMUT.candledesc +
+	KOMUT.lovekomut +
+	KOMUT.lovedesc +
+	KOMUT.flowerkomut +
+	KOMUT.flowerdesc +
+	KOMUT.glasskomut +
+	KOMUT.glassdesc +
+	KOMUT.coffeekomut +
+	KOMUT.coffeedesc +
+	KOMUT.coffeecupkomut +
+	KOMUT.coffeecupdesc +
+	KOMUT.candykomut +
+	KOMUT.candydesc +
+	KOMUT.sandkomut +
         KOMUT.sanddesc +
-    KOMUT.skykomut +
-    KOMUT.skydesc +
-    KOMUT.snowkomut +
-    KOMUT.snowdesc +
-    KOMUT.textkomut +
-    KOMUT.textdesc +
-    KOMUT.silverkomut +
-    KOMUT.silverdesc +
-    KOMUT.smokekomut +
-    KOMUT.smokedesc +
-    KOMUT.starskomut +
-    KOMUT.starsdesc +
-    KOMUT.mmetalkomut +
-    KOMUT.mmetaldesc,
+	KOMUT.skykomut +
+	KOMUT.skydesc +
+	KOMUT.snowkomut +
+	KOMUT.snowdesc +
+	KOMUT.textkomut +
+	KOMUT.textdesc +
+	KOMUT.silverkomut +
+	KOMUT.silverdesc +
+	KOMUT.smokekomut +
+	KOMUT.smokedesc +
+	KOMUT.starskomut +
+	KOMUT.starsdesc +
+	KOMUT.mmetalkomut +
+	KOMUT.mmetaldesc +
+	KOMUT.colorfulkomut +
+	KOMUT.colorfuldesc +
+	KOMUT.metalickomut +
+	KOMUT.metalicdesc,
         MessageType.text
     );
 }));
@@ -193,7 +200,7 @@ Asena.addCommand({ pattern: 'avengersttp ?(.*)', fromMe: true, desc: Lang.AVENGE
         topText = split[1];
         bottomText = split[0];
     }
-    else {
+	else {
         topText = match[1];
         bottomText = '';
     }
@@ -400,6 +407,26 @@ Asena.addCommand({ pattern: 'mmetalttp ?(.*)', fromMe: true, desc: Lang.MMETAL_D
     if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
     var ttinullimage = await axios.get(`https://api.xteam.xyz/photooxy/modernmetal?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made By FelixBlack' })
+
+}));
+
+Asena.addCommand({ pattern: 'colorful ?(.*)', fromMe: true, desc: Lang.COLORFUL_DESC, dontAddCommand:true }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.xteam.xyz/videomaker/colorful?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made By FelixBlack' })
+
+}));
+
+Asena.addCommand({ pattern: 'metalicttp ?(.*)', fromMe: true, desc: Lang.METALİC_DESC, dontAddCommand:true }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.xteam.xyz/photooxy/metalicglow?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made By FelixBlack' })
 
