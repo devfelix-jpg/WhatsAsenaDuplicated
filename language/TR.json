@@ -73,10 +73,10 @@
             "MUST_TEXT": "```Lütfen herhangi bir mesajı yanıtlayın```"
         },
         "heroku": {
-            "RESTART_DESC": "WhatsAsena'yı yeniden başlatın",
-            "RESTART_MSG": "```Yeniden Başlatılıyor...```",
-            "SHUTDOWN_DESC": "WhatsAsena'yı kapatır.",
-            "SHUTDOWN_MSG": "*Belki birgün tekrar görüşebiliriz..\nHoşcakal Sahip..*\n```Asena Kapatılıyor... ⛔```",
+            "RESTART_DESC": "AsenaBlack'i yeniden başlatın",
+            "RESTART_MSG": "```FelixBlack Tarafından Yeniden Başlatılıyor...```",
+            "SHUTDOWN_DESC": "AsenaBlack'i kapatır.",
+            "SHUTDOWN_MSG": "*Hey Benimde Uykum Vardı Zaten..\nTeşekkürler ve İyi Geceler Sahip..*\n```AsenaBlack Kapatılıyor... ⛔```",
             "DYNO_DESC": "Heroku dyno kullanımını kontrol edin",
             "DYNO_TOTAL": "```Toplam Kota```",
             "DYNO_USED": "```Kullanılan kota```",
@@ -140,14 +140,14 @@
         },
         "profile": {
             "KICKME_DESC": "Yazdığınız gruptan sizi çıkarır.",
-            "KICKME": "```Güle güle. Ben gidiyorum 🤠```",
+            "KICKME": "```FelixBlack ve Maniti(AsenaBlack) Burayı Terk Ediyoruz.🤠```",
             "PP_DESC": "Yanıt verdiğiniz fotoğrafı profil fotoğrafınız yapar.",
             "NEED_PHOTO": "*Bana bir fotoğraf ver!*",
             "PPING": "```Profil fotoğrafı yapılıyor...```",
             "BLOCK_DESC": "Belirttiğiniz kullanıcıyı engeller.",
             "UNBLOCK_DESC": "Belirttiğiniz kullanıcının engelini kaldırır.",
-            "BLOCKED": "engellendin",
-            "UNBLOCKED": "engelin kalktı",
+            "BLOCKED": "*Şansına Küs*",
+            "UNBLOCKED": "*Neyse Neyse Engelini Kaldırdım*",
             "BLOCKED_UPPER": "Engellendin!",
             "UNBLOCKED_UPPER": "Engelini kaldırdım.",
             "NEED_USER": "Bana bir kullanıcı ver!",
@@ -206,18 +206,18 @@
         },
         "updater": {
             "UPDATER_DESC": "Güncelleme denetler.",
-            "UPDATE": "*Botunuz tamamen güncel!*",
-            "NEW_UPDATE": "*Bot için yeni güncelleme mevcut!*\n\nDeğişiklikler:\n```",
+            "UPDATE": "*AsenaBlack tamamen güncel!*",
+            "NEW_UPDATE": "*AsenaBlack için yeni güncelleme mevcut!*\n\nDeğişiklikler:\n```",
             "UPDATE_NOW_DESC": "Güncelleme yapar.",
-            "UPDATING": "_Güncelleme yapılıyor..._",
+            "UPDATING": "_AsenaBlack İçin Güncelleme Başlamıştır Komutanım..._",
             "INVALID_HEROKU": "*❌ Heroku bilgileriniz yanlış!*",
             "UPDATED": "*✅ Güncelleme başarılı oldu!*",
             "UPDATED_LOCAL": "*✅ Güncelleme başarılı oldu!*",
-            "AFTER_UPDATE": "*💬 WhatsAsena Yeniden Başlatılıyor*"
+            "AFTER_UPDATE": "*💬 AsenaBlack Yeniden Başlatılıyor*"
         },
         "weather": {
-            "WEATHER_DESC": "Hava durumu getirir.\n⌨️ Örnek: .weather bakü",
-            "NEED_LOCATION": "*Lütfen bir konum yazın!*\n*Örnek:* ```.weather Bakü```",
+            "WEATHER_DESC": "Hava durumu getirir.\n⌨️ Örnek: .weather alaplı",
+            "NEED_LOCATION": "*Lütfen bir konum yazın!*\n*Örnek:* ```.weather Alaplı```",
             "LOCATION": "Konum",
             "TEMP": "Sıcaklık",
             "DESC": "Açıklama",
@@ -324,7 +324,7 @@
             "GÜNÜÇMUTE": "*Grup 3 gün süreyle susturuldu!*",
             "TÜR": "*Bilinmeyen Tür!*\n_Dakika: 1-59m_\n_Saat: 1-12h_\n_Gün: 1d-3d_",
             "MUTE_DESC": "Grup sohbetini kapatır. Sadece adminler mesaj gönderebilir!",
-            "MUTE_OPEN": "*Sohbet Tekrardan Açılmıştır!*"
+            "MUTE_OPEN": "*Sohbet Tekrardan AsenaBlack Tarafından Açılmıştır!*"
         },
         "unvoice": {
             "UV_DESC": "Müzik dosyasını sesli mesaja çevirir.",
