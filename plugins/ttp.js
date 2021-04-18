@@ -41,7 +41,7 @@ const KOMUT = {
     candlekomut: '💻Usage: *.candlettp selam* \n',
     candledesc: 'ℹ️Desc: _yazıyı şeker dolu bardağın üzerine yazılmış resme çevirir_. \n\n',
     lovekomut: '💻Usage: *.lovettp selam* \n',
-    lovedesc: 'ℹ️Desc: _yazıyı aşk mesajı resme çevirir_. \n\n',
+    lovedesc: 'ℹ️Desc: _Kullanılamaz. 1 kişiye özel_. \n\n',
     flowerkomut: '💻Usage: *.flowerttp selam* \n',
     flowerdesc: 'ℹ️Desc: _yazıyı çiçek dolu bardağın üzerine yazılmış resme çevirir_. \n\n',
     glasskomut: '💻Usage: *.glassttpp selam* \n',
@@ -278,7 +278,7 @@ Asena.addCommand({ pattern: 'lovettp ?(.*)', fromMe: true, desc: Lang.LOVE_DESC,
 
     var ttinullimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*```FELİX 💑 ELİF```*' })
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```FELİX 💑 ELİF```' })
 
 }));
 
