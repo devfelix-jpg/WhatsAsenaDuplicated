@@ -11,6 +11,7 @@ And other helpers...
 
 const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
+
 if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'soru ?(.*)', fromMe: true}, (async (message, match) => {
