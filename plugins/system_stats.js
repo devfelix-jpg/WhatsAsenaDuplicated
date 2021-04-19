@@ -24,7 +24,7 @@ Asena.addCommand({pattern: 'hosgeldin', fromMe: true, desc: Lang.ALIVE_DESC}, (a
 
         await message.client.sendMessage(
             message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/welcome.mp4"),
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/hosgeldin.mp4"),
             MessageType.video, 
             { mimetype: Mimetype.gif, caption: "```BFE'ye Hoşgeldin!```\n\n*Kurallar:* ```Saygısızlık Yapma Yeter Dostum```\n*Bot Geliştiricisi:* ```DevFelix```" }
         )
