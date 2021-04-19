@@ -719,10 +719,11 @@ var i = Math.floor(27*Math.random())
 await message.sendMessage(`${r_text[i]}`);
 
     }));
-}
 
     Asena.addCommand({pattern: 'infosoru', fromMe: true}, (async (message, match) => {
 
         await message.sendMessage('💻Usage: *.soru <reply>*\nℹ️Desc: Arkadaşlarınıza sorabileceğiniz güzel ve düşündürücü sorular.\n\n💻Usage: *.zorsoru <reply>*\nℹ️Desc: Normalden daha zorlayıcı sorular için hazırlan!\n\n💻Usage: *.18soru <reply>*\nℹ️Desc: +18 doğruluk soruları sorar.\n\n💻Usage: *.lgbtsoru <reply>*\nℹ️Desc: LGBT konuları hakkında soru sorar.\n🆕 _Filter Destekliyor!_');
 
-}));
+    }));
+   
+}    
