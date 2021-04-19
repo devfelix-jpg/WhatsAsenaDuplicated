@@ -366,9 +366,10 @@ await message.sendMessage(`${r_text[i]}`);
 
     }));
 }
+
 else if (Config.WORKTYPE == 'public') {
     
-     Asena.addCommand({pattern: 'soru ?(.*)', fromMe: true}, (async (message, match) => {
+     Asena.addCommand({pattern: 'soru ?(.*)', fromMe: false}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *İşte Sorun Geliyor..* 🤭 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -497,7 +498,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-Asena.addCommand({pattern: 'zorsoru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'zorsoru ?(.*)', fromMe: false}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *Senin İçin En Zor Soruları Seçiyorum..* 😈 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -591,7 +592,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-Asena.addCommand({pattern: '18soru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: '18soru ?(.*)', fromMe: false}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' 💋 *Hazır mısın* 👅 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
@@ -674,7 +675,7 @@ await message.sendMessage(`${r_text[i]}`);
 
 }));
 
-Asena.addCommand({pattern: 'lgbtsoru ?(.*)', fromMe: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'lgbtsoru ?(.*)', fromMe: false}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *Sorun Geliyor..* 🏳️‍🌈 ', MessageType.text, {
         quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
