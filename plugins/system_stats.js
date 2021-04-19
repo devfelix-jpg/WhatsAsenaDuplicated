@@ -22,24 +22,23 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
   
-    if (Config.ALIVEMSG == 'default') {
+     if (Config.ALIVEMSG == 'default') {
 
         await message.client.sendMessage(
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```AsenaBlack Felix İçin Çalışıyor!```\n\n*Instagram:* ```Spiocagan```\n*Grade:* ```Developer```\n*Ortak:* ```šαψεx```\n*Instagram'ı:* ```MTalha00```\n\n*Favori Müziğim:*```Bal Klavuzu İlahisi - Albadeep```" }
-        )
+            { mimetype: Mimetype.gif, caption: "```AsenaBlack DevFelix İçin Çalışıyor!```\n\n*Instagram:* ```Spiofelix```\n*Grade:* ```Developer```\n*Ortak:* ```šαψεx```\n*Instagram'ı:* ```MTalha00```\n\n*Favori Müziğim:*```Bal Klavuzu İlahisi - Albadeep```" }        )
     }
-         else if (Config.ALIVEMSG == 'hosgeldin') {
+    else if (Config.ALIVEMSG == 'HOSGELDİN') {
         await message.client.sendMessage(
             message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210228-WA0022.mp4"),
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/hosgeldin.mp4"),
             MessageType.video, 
             { mimetype: Mimetype.mpeg, caption: "```BFE'ye Hoşgeldin!```\n\n*Kurallar:* ```Saygısızlık Yapma Yeter Dostum```\n*Bot Geliştiricisi:* ```DevFelix```" }
         )
     }
- }));
+}));
 
     Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
 
