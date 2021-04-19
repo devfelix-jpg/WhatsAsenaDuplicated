@@ -31,6 +31,14 @@ if (Config.WORKTYPE == 'private') {
             { mimetype: Mimetype.gif, caption: "```AsenaBlack Felix İçin Çalışıyor!```\n\n*Instagram:* ```Spiocagan```\n*Grade:* ```Developer```\n*Ortak:* ```šαψεx```\n*Instagram'ı:* ```MTalha00```\n\n*Favori Müziğim:*```Bal Klavuzu İlahisi - Albadeep```" }
         )
     }
+         else if (Config.ALIVEMSG == 'hosgeldin') {
+        await message.client.sendMessage(
+            message.jid, 
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210228-WA0022.mp4"),
+            MessageType.video, 
+            { mimetype: Mimetype.mpeg, caption: "```BFE'ye Hoşgeldin!```\n\n*Kurallar:* ```Saygısızlık Yapma Yeter Dostum```\n*Bot Geliştiricisi:* ```DevFelix```" }
+        )
+    }
  }));
 
     Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
