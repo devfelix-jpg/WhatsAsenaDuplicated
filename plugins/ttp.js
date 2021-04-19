@@ -4,10 +4,10 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
-const Config = require('../config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
+const Config = require('../config');
 const GW = "Yazıyı dark neon fotoğrafına çevirir."
 const NM = "Anime banner gönderir."
 
