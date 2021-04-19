@@ -17,19 +17,19 @@ const fs = require('fs');
 const Language = require('../language');
 const Lang = Language.getString('system_stats');
 
-Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'hosgeldin', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
     
     if (Config.ALIVEMSG == 'default') {
 
         await message.client.sendMessage(
             message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
+            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/welcome.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```AsenaBlack DevFelix İçin Çalışıyor!```\n\n*Instagram:* ```Spiofelix```\n*Grade:* ```Developer```\n*Ortak:* ```šαψεx```\n*Instagram'ı:* ```MTalha00```\n\n*Favori Müziğim:*```Bal Klavuzu İlahisi - Albadeep```" }
+            { mimetype: Mimetype.gif, caption: "```BFE'ye Hoşgeldin!```\n\n*Kurallar:* ```Saygısızlık Yapma Yeter Dostum```\n*Bot Geliştiricisi:* ```DevFelix```" }
         )
     }
-    else if (Config.ALIVEMSG == 'hosgeldin') {
+    else if (Config.ALIVEMSG == 'hosgeldiiiin') {
         await message.client.sendMessage(
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/welcome.mp4"),
